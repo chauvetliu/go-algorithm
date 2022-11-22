@@ -17,6 +17,7 @@ func countSort(data []int) {
 		j := data[i] - min
 		c[j]++
 	}
+
 	k := 0
 	//恢复数组
 	for i := range c {
