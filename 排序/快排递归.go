@@ -33,3 +33,30 @@ func main() {
 	arr := []int{1, 9, 10, 30, 2, 5, 45, 8, 63, 234, 12}
 	fmt.Println(QuickSort(arr))
 }
+
+/*
+*
+快速排序
+//*/
+//func quickSort(data []int) {
+//	if len(data) < 1 {
+//		return
+//	}
+//	l, r := 0, len(data)-1
+//	//基准值
+//	base := data[0]
+//	for i := 0; i <= r; {
+//		//比基准值大的放右边
+//		if data[i] > base {
+//			data[r], data[i] = data[i], data[r]
+//			r--
+//		} else {
+//			//比基准值小或等于的放左边
+//			data[l], data[i] = data[i], data[l]
+//			l++
+//			i++
+//		}
+//	}
+//	quickSort(data[:l])
+//	quickSort(data[l+1:])
+//}
