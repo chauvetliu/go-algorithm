@@ -19,7 +19,7 @@ func main() {
 
 	var list3 List
 	list3.Node = "wei"
-	
+
 	list2.NextNode = &list3
 
 	each(&list1)
@@ -27,7 +27,7 @@ func main() {
 
 func each(node *List) {
 	for node != nil {
-		fmt.Println(*node)
+		fmt.Println(node.Node)
 		node = node.NextNode
 	}
 }
