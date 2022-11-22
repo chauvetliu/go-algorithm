@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type ListNodeII struct {
 	Val  int
 	Next *ListNodeII
@@ -33,5 +35,22 @@ func reverseBetween(head *ListNodeII, left int, right int) *ListNodeII {
 }
 
 func main() {
+	var list = &ListNodeII{
+		Val: 1,
+		Next: &ListNodeII{
+			Val: 2,
+			Next: &ListNodeII{
+				Val: 3,
+				Next: &ListNodeII{
+					Val: 4,
+					Next: &ListNodeII{
+						Val:  5,
+						Next: &ListNodeII{},
+					},
+				},
+			},
+		},
+	}
 
+	fmt.Println(reverseBetween(list, 3, 4))
 }
